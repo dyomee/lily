@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.c-items__discount {
+}
+.c-items__discountOff {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 10px 0 0;
+  padding: 3px;
+  border: 1px solid #fff;
+  color: #fff;
+}
+@media all and (max-width: 768px) {
+  .c-items__discountOff {
+    color: #d70000;
+    border: none;
+  }
+}
+
+/*** SP表示でのページャーpadding補正 ***/
+@media all and (max-width: 768px) {
+  .p-newsPagenation__container {
+    padding: 0 15px;
+  }
+}
+
+/*** 30 YEAR ***/
+.u-30yrBlue {
+  color: #177fb2;
+}
+.p-30yrIndex__anchor {
+  display: block;
+  height: 100%;
+  background: #fff;
+}
+
+.p-newsIndex__item:first-of-type .p-30yrIndex__anchor {
+  display: block;
+}
+.p-newsIndex__item:first-of-type .p-30yrIndex__anchor .p-newsIndex__text {
+  padding: 15px 0;
+  font-size: 1rem;
+}
+@media (max-width: 767px) {
+  .p-newsIndex__item:first-of-type .p-30yrIndex__anchor .p-newsIndex__text {
+    padding: 15px;
+  }
+}
+.p-30yr .p-topRenewalInstagram {
+  padding: 0;
+  margin: 1em 0;
+}
+@media all and (max-width: 768px) {
+  .p-30yr .p-topRenewalInstagram {
+    overflow: visible;
+  }
+}
+@media all and (max-width: 768px) {
+  .p-30yr .p-topRenewalInstagram__lists {
+    width: calc(50vw);
+  }
+}
+/*** 30 YEAR Gutenberg ***/
+@media all and (max-width: 768px) {
+  .p-30yr .wp-block-media-text__content {
+    padding: 0;
+    margin-top: 2em;
+  }
+}
+
+/**
+ * System Append CSS
+ */
+.cake-sql-log {
+  display: none !important;
+}
